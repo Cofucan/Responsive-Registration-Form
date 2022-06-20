@@ -18,6 +18,7 @@ main {
   margin: auto;
   height: 80%;
   width: 75%;
+  
 
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); */
@@ -55,6 +56,7 @@ form {
   background-color: white;
   padding: 2em;
   border-radius: 8px;
+  box-shadow: 0px 7px rgba(66, 66, 66, 0.342);
 }
 
 form p {
@@ -96,6 +98,7 @@ input[class="input-field"]:invalid + .invalid {
   background-color: hsl(248, 32%, 49%);
   padding: 15px;
   border-radius: 6px;
+  box-shadow: 0px 8px rgba(66, 66, 66, 0.281);
 }
 
 .trial-btn a {
@@ -107,6 +110,14 @@ input[class="input-field"]:invalid + .invalid {
   color: white;
   background-color: hsl(154, 59%, 51%);
   border: none;
+  box-shadow: 0px 4px hsl(154, 64%, 45%);
+  margin-bottom: 20px;
+}
+
+.claim-btn:hover {
+    background-color: hsl(154, 87%, 70%);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .try-free, .terms {
@@ -119,6 +130,7 @@ input[class="input-field"]:invalid + .invalid {
 
 @media screen and (max-width: 800px) {
   main {
+    margin-top: 1px;
     display: grid;
     width: 85%;
   }
