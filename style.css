@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/images/bg-intro-desktop.png);
+}
+
+main {
+  padding-top: 80px;
+  display: flex;
+  gap: 4em;
+  margin: auto;
+  height: 80%;
+  width: 75%;
+
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); */
+}
+
+main > * {
+  /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; */
+  flex: 1;
+}
+
+.left {
+  /* background-color: hsl(0, 100%, 74%); */
+  /* padding: 60px; */
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.left > * {
+  padding: 20px 40px;
+}
+
+.left h1 {
+  font-size: 50px;
+}
+
+.right {
+  /* background-color: blanchedalmond; */
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  font-size: 16px;
+}
+
+form {
+  display: grid;
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+form p {
+  color: darkgray;
+}
+
+input {
+  padding: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.input-field {
+  background: url(/images/icon-error.svg) no-repeat;
+  background-position: right;
+  /* padding: 10px; */
+}
+/* input[error-msg] {
+    margin-bottom: 70px;
+    display: block;
+    
+    border: 2px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+    content: attr(error-msg);
+} */
+
+.trial-btn {
+  margin-bottom: 30px;
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.trial-btn a {
+  padding: 20px;
+  color: white;
+}
+
+.claim-btn {
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+}
+
+span {
+  font-weight: 700;
+}
+
+.terms {
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    display: grid;
+    width: 85%;
+  }
+
+  body {
+    background-image: url(/images/bg-intro-mobile.png);
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 30px;
+  }
+}
+
+/* input[required]:p */
