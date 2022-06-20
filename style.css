@@ -24,15 +24,10 @@ main {
 }
 
 main > * {
-  /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto; */
   flex: 1;
 }
 
 .left {
-  /* background-color: hsl(0, 100%, 74%); */
-  /* padding: 60px; */
   color: aliceblue;
   display: flex;
   flex-direction: column;
@@ -49,7 +44,6 @@ main > * {
 }
 
 .right {
-  /* background-color: blanchedalmond; */
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
@@ -67,27 +61,35 @@ form p {
   color: darkgray;
 }
 
+.invalid {
+    font-size: 0px;
+}
+
 input {
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-weight: 600;
   border: 1px solid lightgray;
   border-radius: 5px;
 }
 
-.input-field {
-  background: url(/images/icon-error.svg) no-repeat;
-  background-position: right;
-  /* padding: 10px; */
-}
-/* input[error-msg] {
-    margin-bottom: 70px;
-    display: block;
-    
+
+input[class="input-field"]:invalid {
     border: 2px solid hsl(0, 100%, 74%);
     color: hsl(0, 100%, 74%);
     content: attr(error-msg);
-} */
+    background: url(/images/icon-error.svg) no-repeat;
+    background-position: 95%;
+}
+
+input[class="input-field"]:invalid + .invalid {
+    font-size: 12px;
+    font-style: italic;
+    display: block;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin-bottom: 15px;
+}
 
 .trial-btn {
   margin-bottom: 30px;
@@ -107,7 +109,7 @@ input {
   border: none;
 }
 
-span {
+.try-free, .terms {
   font-weight: 700;
 }
 
@@ -134,4 +136,3 @@ span {
   }
 }
 
-/* input[required]:p */

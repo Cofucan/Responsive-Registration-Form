@@ -22,27 +22,14 @@
         </div>
         <div>
           <form action="">
-
-            <!-- <div class="input-container" error-msg="First Name cannot be empty">
-              <input type="text" id="fname" placeholder="First Name" required />
-            </div>
-            <div class="input-container" error-msg="Last Name cannot be empty">
-              <input type="text" id="lname" placeholder="Last Name" required />
-            </div>
-            <div class="input-container" error-msg="Looks like this is not an email">
-              <input type="email" id="email" placeholder="Email Address" required />
-            </div>
-            <div class="input-container" error-msg="Password cannot be empty">
-              <input type="password" id="password" placeholder="Password" required />
-            </div>
-            <div class="submit-container">
-              <input class="claim-btn" type="submit" value="CLAIM YOUR FREE TRIAL" />
-            </div> -->
-
-            <input type="text" class="input-field" id="fname" placeholder="First Name" error-msg="First Name cannot be empty" required />
-            <input type="text" class="input-field" id="lname" placeholder="Last Name" error-msg="Last Name cannot be empty" required />
-            <input type="email" class="input-field" id="email" placeholder="Email Address" error-msg="Looks like this is not an email" required />
-            <input type="password" class="input-field" id="password" placeholder="Password" error-msg="Password cannot be empty" required />
+            <input type="text" class="input-field" id="fname" placeholder="First Name" required />
+            <span class="invalid">First Name cannot be empty</span>
+            <input type="text" class="input-field" id="lname" placeholder="Last Name" required />
+            <span class="invalid">Last Name cannot be empty</span>
+            <input type="email" class="input-field" id="email" placeholder="Email Address" required />
+            <span class="invalid">Looks like this is not an email</span>
+            <input type="password" class="input-field" id="password" placeholder="Password" required />
+            <span class="invalid">Password cannot be empty</span>
             <input class="claim-btn" class="input-field" type="submit" value="CLAIM YOUR FREE TRIAL" />
 
             <p>
