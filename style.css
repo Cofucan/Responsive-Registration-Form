@@ -13,11 +13,14 @@ body {
 
 main {
   padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 11px;
+  padding-right: 11px;
   display: flex;
   gap: 4em;
   margin: auto;
   height: 80%;
-  width: 75%;
+  max-width: 1440px;
   
 
   /* display: grid;
@@ -128,11 +131,15 @@ input[class="input-field"]:invalid + .invalid {
   color: hsl(0, 100%, 74%);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 70em) {
   main {
     margin-top: 1px;
     display: grid;
-    width: 85%;
+    min-width: 375px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   body {
