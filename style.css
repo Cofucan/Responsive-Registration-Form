@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 
@@ -21,7 +23,6 @@ main {
   margin: auto;
   height: 80%;
   max-width: 1440px;
-  
 
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); */
@@ -67,7 +68,7 @@ form p {
 }
 
 .invalid {
-    font-size: 0px;
+  font-size: 0px;
 }
 
 input {
@@ -78,22 +79,21 @@ input {
   border-radius: 5px;
 }
 
-
 input[class="input-field"]:invalid {
-    border: 2px solid hsl(0, 100%, 74%);
-    color: hsl(0, 100%, 74%);
-    content: attr(error-msg);
-    background: url(/images/icon-error.svg) no-repeat;
-    background-position: 95%;
+  border: 2px solid hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+  content: attr(error-msg);
+  background: url(/images/icon-error.svg) no-repeat;
+  background-position: 95%;
 }
 
 input[class="input-field"]:invalid + .invalid {
-    font-size: 12px;
-    font-style: italic;
-    display: block;
-    color: hsl(0, 100%, 74%);
-    text-align: right;
-    margin-bottom: 15px;
+  font-size: 12px;
+  font-style: italic;
+  display: block;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+  margin-bottom: 15px;
 }
 
 .trial-btn {
@@ -118,12 +118,13 @@ input[class="input-field"]:invalid + .invalid {
 }
 
 .claim-btn:hover {
-    background-color: hsl(154, 87%, 70%);
-    transition: 0.2s;
-    cursor: pointer;
+  background-color: hsl(154, 87%, 70%);
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-.try-free, .terms {
+.try-free,
+.terms {
   font-weight: 700;
 }
 
@@ -136,8 +137,9 @@ input[class="input-field"]:invalid + .invalid {
     margin-top: 1px;
     display: grid;
     min-width: 375px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -154,4 +156,3 @@ input[class="input-field"]:invalid + .invalid {
     font-size: 30px;
   }
 }
-
